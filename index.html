@@ -1,0 +1,137 @@
+<!DOCTYPE html> <!-- Pls dont forget this shit-->
+<html lang="en"> <!-- Begin of the code-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothes Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="assets/css/style.scss">
+</head>
+<style>
+    body{
+        font-family: 'Roboto', sans-serif;
+    }
+    .logo img{
+        width:100px;
+        color: white;
+    }
+    .menu{
+        background-color: black;
+        width: 100%;
+        top: 0px;
+    }
+    .menu-main{
+        display:flex;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+    .menu-main a:hover{
+        color:black;
+        background-color:white;
+    }
+    .menu-main a{
+        list-style: none;
+        margin: 10px;
+        color: white;
+        background-color: black;
+        font-style:normal;
+        display: flex;
+        justify-content: space-between;
+        transition: color 0.5s;
+        transition: background-color 0.5s;
+        text-decoration: none;
+    }
+    h1{
+        color: white;
+    }
+    p{
+        color: white;
+        border-left: solid white 2px;
+    }
+    footer{
+        bottom:0;
+        position: relative;
+        text-align: center;
+        background-color: black;
+        color: white;
+        margin-top: 175px;
+    }
+    .selector{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .selector a{
+        color: black;
+        border: solid black 5px;
+        font-size: 75px;
+        font-style: unset;
+        margin-bottom: 100px;
+        transition: color 0.5s;
+        transition: background-color 0.5s;
+        text-decoration: none;
+        padding: 10px;
+    }
+    .selector a:hover{
+        cursor: pointer;
+        color: white;
+        background-color: black;
+    }
+    .welcome{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+        margin: 100px;
+    }
+    h2{
+        text-align: center;
+        color: black;
+        background-color: white;
+        transition: color 0.5s;
+        transition: background-color 0.5s;
+    }
+    h2:hover{
+        cursor:unset;
+        color: white;
+        background-color: black;
+    }
+</style>
+<body>
+    <div class="animate__animated animate__fadeInDown">
+        <div class="menu">
+            <div class="logo">
+                <img src="img/logo.png" alt="shop logo">
+            </div>
+            <div class="menu-main">
+                <a href="Main-Menu.html">Home</a>
+                <a href="https://www.google.com" target="_blank">Detail</a>
+                <a href="https://www.google.com" target="_blank">Contact us</a>
+            </div>
+        </div>
+    </div>
+    <div class="welcome">
+        <h2 class="animate__animated animate__fadeInDown">Welcome to our store!</h2>
+        <h2 class="animate__animated animate__fadeIn">What have brought you here?</h2>
+        <h2 class="animate__animated animate__fadeInUp">Perhaps these Clothes will help!</h2>
+    </div>
+    </div>
+    <hr>
+    <div class="welcome">
+        <h2 class="animate__animated animate__backInDown">
+            Choose one of these tabs
+        </h2>
+    </div>
+    <div class="animate__animated animate__backInUp">
+        <div class="selector">
+            <a href="Hats.html">Hats</a>
+            <a href="Shirts.html">Shirts</a>
+            <a href="Coats-Hoodies.html">Coats/Hoodies</a>
+        </div>
+    </div>
+    </div>
+    <footer class="animate__animated animate__fadeInUp"> <!-- Credits-->
+        <h3>Develop by Dương Hoàng Đạt</h3>
+    </footer>
+</body>
+</html>
