@@ -2,21 +2,26 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 .logo img{
-    width:100px;
+    width: 100px;
     color: white;
 }
 .menu{
     background-color: black;
+    display: flex;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
 }
 .menu-main{
     display:flex;
     justify-content: center;
-    cursor: default;
+    align-items: center;
 }
 .menu-main a:hover{
     color:black;
     background-color:white;
-    cursor: default;
+    cursor: pointer;
 }
 .menu-main a{
     list-style: none;
@@ -130,6 +135,7 @@ footer{
 .menu-main span:hover{
     color:black;
     background-color:white;
+    cursor: pointer;
 }
 .dropdown-content a{
     color: black;
@@ -152,11 +158,13 @@ body{
     height: 40px;
 }
 .social-media{
-    position: absolute;
-    right: 0;
-    top: 0;
     display: flex;
     flex-flow: row;
+    justify-content: space-between;
+}
+.social-media img{
+    height: 40px;
+    width: 40px;
 }
 .welcome h2{
     padding-top: 30px;
