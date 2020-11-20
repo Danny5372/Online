@@ -1,34 +1,36 @@
-<!DOCTYPE html> <!-- Pls dont forget this shit-->
-<html lang="en"> <!-- Begin of the code-->
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clothes Shop-Coat/Hoodies</title>
+    <title>Contact us</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="body_style.css">
 </head>
 <style>
-    .detail{
-        display: flex;
-        justify-content: space-around;
-        flex-flow: row;
-        margin-top: 100px;
-        margin-bottom: 100px;
+    .Info{
+        padding:20px
     }
-    .detail img{
-        margin-top: 100px;
-        width: 500px;
-        height: 500px;
-    }
-    .smallerdetail{
+    .question{
+        resize: none;
         display: flex;
-        flex-flow: column; 
-        justify-content: space-around;
-        align-items: center;
+        margin-top: 50px;
+    }
+    textarea{
+        resize: none;
+    }
+    .Info{
+        text-align: center;
+    }
+    .Submit{
+        size: 100px;
+    }
+    .Opening{
+        margin-top: 110px;
+        text-align: center;
     }
 </style>
-<body> <!--Beign of everything and of course i mean the code in the body, no harmful meaning here-->
-    <!--Begin of the menu code -->
+<body>
     <div class="animate__animated animate__fadeInDown">
         <div class="menu">
             <div class="logo">
@@ -66,21 +68,44 @@
             </div>
         </div>
     </div>
-    <p></p> <!-- End of the menu and the beginning of the item/tags/clothes-->
-     <!--Welcome-->
-     <div class="animate__animated animate__backInUp">
-        <div class="detail">
-            <img src="img/123138227_367353747806616_6768120446532123933_n.jpg" alt="Coat#1">
-            <div class="smallerdetail">
-                <h1>Coat#2</h1>
-                <p>The coat design in the great way, perfect for most people</p>
-                <div class="button"><a href="Coat-2 Purchased.html" target="blank">Buy</a></div>
-            </div>
+    <div class="animate__animated animate__fadeInDown">
+        <!-- The questions shenanigans -->
+        <div class="Opening">
+            <h1>HAVE SOME QUESTIONS?</h1>
+            <p>Sign up now to get answer!</p>
+        </div>
+        <!-- The image -->
+        <div class="Image">
+            <img src="" alt="">
         </div>
     </div>
+    <!-- Filling in information -->
+    <div class="animate__animated animate__fadeInDown">
+        <div class="Info">
+            <div class="username">
+                <label>Username <br>(Don't use your real name)</label> <br>
+            <input type = "text"
+                    id = "myText"
+                    placeholder="Your name..">
+            </div>
+            <div class="Email">
+                <label for="">Your Gmail</label> <br>
+                <input type="text"
+                        id="myText"
+                        placeholder="Your email...">
+            </div>
+            <div class="Question">
+                <label>Your question </label> <br>
+                    <textarea id="subject" name="subject" placeholder="Write something.." rows="4" cols="50" ></textarea>
+            </div>
+            <div class="button">
+                <input class="Submit" type="submit" value="Submit">
+            </div>
+        </div>
     </div>
     <footer class="animate__animated animate__fadeInUp"> <!-- Credits-->
         <h3>Develop by Team Za-Warudo</h3>
     </footer>
-</body> <!-- End of the body, kinda sad ain't it?-->
-</html> <!-- End of the code-->
+    <!--Plot-twist: Long is gay :)-->
+</body>
+</html>
